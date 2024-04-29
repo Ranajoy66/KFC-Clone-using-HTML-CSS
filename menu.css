@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* -webkit-box-sizing: border-box; */
+    font-family: roboto;
+}
+
+/* html{
+    scroll-behavior: smooth;
+} */
+
+/* header part */
+/* top bar */
+#loc{
+    margin-left: 33%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#loc i{
+    color: red;
+}
+#loc span{
+    font-size: 15px;
+    padding-right: 12px;
+}
+#loc input{
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(84, 81, 81);
+    color: #fff;
+    font-weight: 550;
+}
+#loc input:hover{
+    cursor: pointer;
+    outline-style: solid;
+    outline-color: black;
+}
+
+/* Navbar */
+#nav{
+    width: 100%;
+    height: 15vh;
+    margin-top: 10px;
+}
+.navrap{
+    width: 80%;
+    height: 20vh;
+    margin-left: 10%;
+}
+.logo{
+    position: absolute;
+    margin-top: 1%;
+}
+.menu{
+    float: left;
+    margin-left: 10%;
+}
+ul { 
+    /* margin: 150px auto 0;  */
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 600px;
+    text-align: center;
+  }
+  li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+  }
+  #li1{
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    font-weight: 550;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  #li1:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  #li1:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+/* .menu ul{
+    margin-top: 15px;
+}
+.menu ul li{
+    display: inline;
+}
+.menu li a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 17px;
+    color: #000;
+    /* text-transform: uppercase; */
+
+/* search */
+.search{
+    float: right;
+    padding-top: 10px;
+    margin-top: 1%;
+}
+.search button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(84, 81, 81);
+    color: #fff;
+    font-weight: 550;
+}
+.search button:hover{
+    cursor: pointer;
+    outline-style: solid;
+    outline-color: black;
+}
+
+
+
+/* order bar*/
+#order{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(68, 67, 67);
+    padding: 10px;
+}
+#order span{
+    margin-left: 30%;
+    font-size: 17px;
+    font-weight: 550;
+    color: #fff;
+}
+#order input{
+   margin-left: 2%;
+   padding-left: 35px;
+   padding-right: 35px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   border-radius: 30px;
+   border: none;
+   font-weight: 550;
+   background-color: crimson;
+   color: #fff;
+   font-size: 16px;
+}
+#order input:hover{
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* main menu */
+#menu{
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    /* height: 40vh; */
+    /* background-color: green; */
+    /* overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5%; */
+}
+.menu-sec{
+    /* background-color: red; */
+    /* margin-top: 20px; */
+    height: 80vh;
+    /* overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5%; */
+}
+.menu-sec h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: roboto;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.menu-sec svg{
+   margin-left: 40%;
+}
+.menu-list{
+    margin-left: 35%;
+    /* line-height: 3em; */
+}
+.menu-list a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 17px;
+    color: rgb(80, 79, 79);
+}
+
+
+.price-sec{
+    /* background-color: blue; */
+    height: 80vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    /* overflow-y: hidden; */
+}
+/* CHICKEN CHIZZA */
+#cc{
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: rgb(246, 239, 239);
+    padding: 5%;
+    border-radius: 10px;
+}
+/* #peri .price{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    transition: transform .3s;
+    transition: box-shadow .4s;
+    border-radius: 10px;
+}
+#peri .price:hover{
+    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+} */
+#cc .price img{
+    width: 90%;
+    height: 38vh;
+    border-radius: 10px;
+}
+#cc button:hover{
+    cursor: pointer;
+    opacity: .853;
+}
+/* PERI-PERI */
+#peri{
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: rgb(246, 239, 239);
+    padding: 5%;
+    border-radius: 10px;
+}
+/* #peri .price{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    transition: transform .3s;
+    transition: box-shadow .4s;
+    border-radius: 10px;
+}
+#peri .price:hover{
+    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+} */
+#peri .price img{
+    width: 90%;
+    height: 38vh;
+    border-radius: 10px;
+}
+#peri button:hover{
+    cursor: pointer;
+    opacity: .853;
+}
+
+/* VALUE-SNACKS */
+#vs{
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: rgb(246, 239, 239);
+    padding: 3%;
+    border-radius: 10px;
+}
+#vs .price{
+    /* margin-bottom: 10px; */
+    padding-bottom: 10px;
+    /* transition: transform .3s; */
+    transition: box-shadow .4s;
+    border-radius: 10px;
+}
+#vs .price:hover{
+    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#vs .price img{
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+}
+#vs button:hover{
+    cursor: pointer;
+    opacity: .853;
+}
+
+/* CHICKEN ROLLS */
+#cr{
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: rgb(246, 239, 239);
+    padding: 3%;
+    border-radius: 10px;
+}
+#cr .price{
+    /* margin-bottom: 10px; */
+    padding-bottom: 10px;
+    /* transition: transform .3s; */
+    transition: box-shadow .4s;
+    border-radius: 10px;
+}
+#cr .price:hover{
+    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#cr .price img{
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+}
+#cr button:hover{
+    cursor: pointer;
+    opacity: .853;
+}
+
+/* CHICKEN BUCKETS */
+#cb{
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: rgb(246, 239, 239);
+    padding: 3%;
+    border-radius: 10px;
+}
+#cb .price{
+    /* margin-bottom: 10px; */
+    padding-bottom: 10px;
+    /* transition: transform .3s; */
+    transition: box-shadow .4s;
+    border-radius: 10px;
+}
+#cb .price:hover{
+    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#cb .price img{
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+}
+#cb button:hover{
+    cursor: pointer;
+    opacity: .853;
+}
+
+/* BOX MEALS */
+#bm{
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: rgb(246, 239, 239);
+    padding: 3%;
+    border-radius: 10px;
+}
+#bm .price{
+    /* margin-bottom: 10px; */
+    padding-bottom: 10px;
+    /* transition: transform .3s; */
+    transition: box-shadow .4s;
+    border-radius: 10px;
+}
+#bm .price:hover{
+    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#bm .price img{
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+}
+#bm button:hover{
+    cursor: pointer;
+    opacity: .853;
+}
+
+/* BURGERS */
+#bg{
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: rgb(246, 239, 239);
+    padding: 3%;
+    border-radius: 10px;
+}
+#bg .price{
+    /* margin-bottom: 10px; */
+    padding-bottom: 10px;
+    /* transition: transform .3s; */
+    transition: box-shadow .4s;
+    border-radius: 10px;
+}
+#bg .price:hover{
+    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#bg .price img{
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+}
+#bg button:hover{
+    cursor: pointer;
+    opacity: .853;
+}
+
+/* SNACKS */
+#sn{
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: rgb(246, 239, 239);
+    padding: 3%;
+    border-radius: 10px;
+}
+#sn .price{
+    /* margin-bottom: 10px; */
+    padding-bottom: 10px;
+    /* transition: transform .3s; */
+    transition: box-shadow .4s;
+    border-radius: 10px;
+}
+#sn .price:hover{
+    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#sn .price img{
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+}
+#sn button:hover{
+    cursor: pointer;
+    opacity: .853;
+}
+
+/* RICE BOWLZ */
+#rb{
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: rgb(246, 239, 239);
+    padding: 3%;
+    border-radius: 10px;
+}
+#rb .price{
+    /* margin-bottom: 10px; */
+    padding-bottom: 10px;
+    /* transition: transform .3s; */
+    transition: box-shadow .4s;
+    border-radius: 10px;
+}
+#rb .price:hover{
+    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#rb .price img{
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+}
+#rb button:hover{
+    cursor: pointer;
+    opacity: .853;
+}
+
+/* BEVERAGES */
+#bv{
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: rgb(246, 239, 239);
+    padding: 3%;
+    border-radius: 10px;
+}
+#bv .price{
+    /* margin-bottom: 10px; */
+    padding-bottom: 10px;
+    /* transition: transform .3s; */
+    transition: box-shadow .4s;
+    border-radius: 10px;
+}
+#bv .price:hover{
+    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#bv .price img{
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+}
+#bv button:hover{
+    cursor: pointer;
+    opacity: .853;
+}
+
+
+/* footer */
+.container{
+    max-width: 1170px;
+    margin:auto;
+    /* height: 60vh; */
+  }
+  .row{
+    display: flex;
+    /* display: inline; */
+    /* flex-wrap: wrap; */
+  }
+  ul{
+    list-style: none;
+    display: inline;
+  }
+  .footer{
+    background-color: #24262b;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
